@@ -42,14 +42,26 @@ button img {
   width: 50px;
 }
 /* TUỲ CHỈNH ICON */
+.rechuot {
+  transition: all 0.3s ease;
+}
+.rechuot:hover {
+  box-shadow: 5px 10px 5px #888888;
+}
 #riot {
   width: 140px;
   margin: 0px 30px 0px -100px;
+}
+#riot:hover {
+  content: url("img/valorant_icon/riot_icon_1.png");
 }
 #valo {
   width: 80px;
   padding-bottom: -15px;
   margin-right: 30px;
+}
+#valo:hover {
+  content: url("img/valorant_icon/valorant_icon_2.png");
 }
 /*MENU*/
 header > div > ul > li {
