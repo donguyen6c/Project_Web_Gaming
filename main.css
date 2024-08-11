@@ -94,22 +94,24 @@ main > div > video {
   width: 100vw;
   height: auto;
   object-fit: cover;
+  z-index: 1; /* Đặt video dưới nội dung */
   /* position: relative; */
 }
 /*  */
 .slogan {
-  border-radius: 20px;
-  position: absolute;
   color: rgb(196, 190, 190);
   font-size: 30px;
-  top: 264px;
-  left: 506px;
+  margin: 0;
   padding: 5px;
-  background-color: transparent;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Căn giữa theo cả chiều ngang và dọc */
 }
 .main_logo {
   position: absolute;
-  width: 380px;
-  top: 320px;
-  left: 600px;
+  top: calc(35% + 30px); /* Đặt cách slogan 50px */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa theo chiều ngang */
 }
+/*  */
