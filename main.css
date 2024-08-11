@@ -23,6 +23,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 1000; /* Đặt z-index cao để menu nằm trên video */
 }
 header > div > button {
   margin-right: 15px;
@@ -92,6 +93,7 @@ main > div > video {
   display: block;
   width: 100vw;
   height: auto;
+  object-fit: cover;
   /* position: relative; */
 }
 /*  */
