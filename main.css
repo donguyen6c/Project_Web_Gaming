@@ -118,7 +118,9 @@ main > div > video {
 }
 /*  */
 .slogan {
-  color: rgb(208, 197, 197);
+  color: #e2e2de;
+  background-color: #2f364054;
+  border-radius: 0px;
   font-size: 33px;
   margin: 0;
   padding: 5px;
@@ -128,6 +130,7 @@ main > div > video {
   transform: translate(-50%, -50%); /* Căn giữa theo cả chiều ngang và dọc */
 }
 .main_logo {
+  background-color: #c03a2b66;
   position: absolute;
   top: calc(35% + 25px); /* Đặt cách slogan 50px */
   left: 50%;
