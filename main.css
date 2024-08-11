@@ -9,6 +9,25 @@
 body {
   background-color: #7f8fa6;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #979494;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f3640;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(39, 39, 39);
+}
 /* FLEX */
 .flex {
   display: flex;
@@ -92,9 +111,8 @@ header > div > ul > li > a:hover {
 /*  */
 main > div > video {
   display: block;
-  width: 100vw;
+  width: 99.5vw;
   height: auto;
-  object-fit: cover;
   z-index: 1; /* Đặt video dưới nội dung */
   /* position: relative; */
 }
