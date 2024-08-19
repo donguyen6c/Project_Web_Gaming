@@ -1,3 +1,5 @@
+
+
 const sound = document.getElementById("sound");
 const audio = document.getElementById("audio");
 const icon = document.getElementById("icon");
@@ -18,8 +20,12 @@ sound.addEventListener("click", function () {
   playing = !playing; // Đảo ngược trạng thái
 });
 
+////////////////////////////////////////////////
+// Lấy phần tử <a> bằng class "main_button"
+const choingay = document.querySelector(".main_button");
 
-
-
-
-
+// Gắn sự kiện 'click' cho thẻ <a>
+choingay.addEventListener("click", function (event) {
+  // Hiển thị thông báo khi nhấn vào thẻ <a>
+  alert("GAME SẮP RA MẮT VÀO 30/02/2025!!!!");
+});

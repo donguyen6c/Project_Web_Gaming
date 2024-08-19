@@ -1,7 +1,6 @@
 /* CHỈNH TỔNG QUÁT */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-  padding: 0px;
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
@@ -66,34 +65,76 @@ button img {
 #riot {
   width: 140px;
   margin: 0px 30px 0px -100px;
+  filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
+  
 }
 #riot:hover {
-  content: url("img/valorant_icon/riot_icon_1.png");
+  content: url("img/valorant_icon/riot_icon.png");
 }
 #valo {
   width: 80px;
   margin-right: auto;
+  filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
 }
 #valo:hover {
-  content: url("img/valorant_icon/valorant_icon_2.png");
+  content: url("img/valorant_icon/valorant_icon.png");
 }
 /*MENU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 header > div > ul > li {
+  position: relative;
   list-style-type: none;
   margin: 25px;
 }
 header > div > ul > li > a {
   text-decoration: none;
-  color: #c0392b;
-  padding: 8px 8px;
+  color: rgb(227, 227, 227);
+  padding: 8px 0px;
   transition: all 0.3s ease;
 }
 header > div > ul > li > a:hover {
-  color: #bdc3c7;
-  background-color: #c0392b;
+  color: #c0392b;
+  background-color: #272727;
   padding: 8px 8px;
   border-radius: 20px;
 }
+/*/submenu////////////*/
+.submenu{
+  position:absolute;
+  padding:13px ;
+  background-color: #272727;
+  border-top:solid 5px #d63031;
+  list-style: none;
+  width: 150px;
+  margin:6px;
+  display:none;
+}
+
+.submenu >li > a{
+  display: block;
+  padding:12px 15px;
+  color:#bdc3c7;
+  text-decoration: none;
+  border-bottom: solid 1px #43434343;
+  transition: all 0.3s ease;
+}
+header > div > ul > li:hover > .submenu{
+  left:3px;
+  display:block;
+}
+header > div > ul > li > .submenu:hover {
+  left:-5px;
+  transition: all 0.3s ease;
+}
+
+
+.submenu > li:hover > a{
+  background-color: #333438a5;
+  border-radius: 3px;
+  color: #c0392b;
+}
+
+
+
 
 /* icon phía phải menu///////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -135,7 +176,7 @@ main > div > video {
   transform: translateX(-50%);
   background-color: #ff6b5dbd;
   color: #111111dc;
-  padding: 5px;
+  padding: 10px 20px;
   font-size: 26px;
   outline: 1.8px solid white;
   outline-offset: 3.5px;
@@ -201,17 +242,17 @@ transition: all 0.4s ease;
   width: 100%;
   height: 100vh;
     /* Căn giữa ảnh nền */
-  background-repeat: repeat; /* Không lặp lại ảnh nền */
+  background-repeat: repeat; /*lặp lại ảnh nền */
 }
-.left{
+.container2>.left{
   width: 50%;
 }
-.left > img {
+.container2>.left > img {
   width: 80%;
   margin-top:-150px;
   margin-left:100px;
 }
-.right{
+.container2>.right{
   width: 50%;
 }
 .container2 > .right > .text2{
@@ -226,15 +267,60 @@ transition: all 0.4s ease;
   background-color: #e2e2de;
   text-decoration: none;
   font-size: 24px;
-  padding:13px;
-  
+  padding:20px;
 transition: all 0.4s ease;
 }
 .container2> .right > .text2 > a:hover{
+  color: #e2e2de;
   background-color:#c0392b;
   border:solid 1px whitesmoke;
   
 }
+/* MIDDLE CONTENT 3 /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container3 {
+  position: relative; 
+  background-image: url(img/valorant_icon/background_3.png);
+  width: 100%;
+  height: 100vh;
+}
+.container3 > .left {
+  width: 50%;
+}
+.container3 > .left > .text3{
+  margin-left:30px;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: left;
+}
+.container3 > .left > .text3>a{
+  
+  color:#dfe6e9;
+  background-color: #d63031;
+  text-decoration: none;
+  font-size: 24px;
+  padding:20px;
+transition: all 0.4s ease;  
+}
+.container3 > .left > .text3>a:hover{
+  background:#111111;
+}
+
+
+
+.container3 > .right > img {
+  width: 100%;
+}
+.container3 > .right {
+width: 50%;
+}
+
+
+
+
+
+
+
+
 
 /* FOOTER  //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 footer {
