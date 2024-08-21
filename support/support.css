@@ -26,6 +26,7 @@ header {
     right: -5px;
     width: 100%;
     margin-bottom: 50px;    
+    z-index: 999;
 }
 
 header>div>button {
@@ -84,6 +85,7 @@ header>div>ul>li>a:hover{
     top: 43%;
     left: 73%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 /* sub content */
 #h1{
@@ -94,7 +96,7 @@ header>div>ul>li>a:hover{
 }
 #h2{
     left: auto;
-    margin: 45px 45px 15px 15px;
+    margin: 45px 45px 15px 25px;
     font-size: 20px;
     width: 40%;
     text-align: justify
