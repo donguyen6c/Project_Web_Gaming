@@ -3,6 +3,7 @@
 * {
   margin: 0px;
   font-family: "Roboto", sans-serif;
+  
 }
 body {
   background-color: #7f8fa6;
@@ -33,11 +34,12 @@ body {
 /* header/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 header {
   background-color: #1e1e1e;
-  padding: 5px;
   position: fixed;
+  line-height: 1.7;
+  padding-bottom: 0px;
   left: 0;
   right: 0;
-  z-index: 1000; /* Đặt z-index cao để menu nằm trên video */
+  z-index: 1000; /* Đặt z-index cao để menu nằm trên web */
 }
 header > div > button {
   margin-right: 15px;
@@ -60,11 +62,11 @@ button img {
   transition: all 0.3s ease;
 }
 .rechuot:hover {
-  box-shadow: 5px 5px 5px 1px #888888;
+  box-shadow: 5px 5px 5px 1px #ac4848;
 }
 #riot {
   width: 140px;
-  margin: 0px 30px 0px -100px;
+  margin-right: 30px;
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
   
 }
@@ -73,7 +75,7 @@ button img {
 }
 #valo {
   width: 80px;
-  margin-right: auto;
+
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
 }
 #valo:hover {
@@ -169,7 +171,7 @@ main > div > video {
   transform: translateX(-50%);
   /* Căn giữa theo chiều ngang */
 }
-.main_button {
+#main_button {
   position: absolute;
   top: calc(55% + 30px);
   left: 50%;
@@ -183,7 +185,7 @@ main > div > video {
   text-decoration: none;
   transition: all 0.4s ease;
 }
-.main_button:hover {
+#main_button:hover {
   background-color: #e2e2dea0;
 }
 

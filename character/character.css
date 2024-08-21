@@ -6,12 +6,10 @@
   line-height: 1.7;
 }
 body {
-  background-color: #e1ddd6;
+  background-color: rgb(15, 25, 35);
+  /* background-color: #19222d; */
 }
-a.link{
-  color:#000000;
-  font-weight: bold;
-}
+
 /* scrollbar ////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*độ to của scrollbar*/
 ::-webkit-scrollbar {
@@ -32,14 +30,15 @@ a.link{
 /* FLEX */
 .flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 /* header/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 header {
   background-color: #1e1e1e;
-  position: fixed;
   line-height: 1.7;
+  position: fixed;
   padding-bottom: 0px;
   left: 0;
   right: 0; /* Đặt z-index cao để menu nằm trên video */
@@ -68,11 +67,11 @@ button img {
 .rechuot:hover {
   box-shadow: 5px 5px 5px 1px #ac4848;
 }
+
 #riot {
   width: 140px;
   margin-right: 30px;
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
-  
 }
 #riot:hover {
   content: url("../img/valorant_icon/riot_icon.png");
@@ -102,105 +101,107 @@ header > div > ul > li > a:hover {
   padding: 8px 8px;
   border-radius: 20px;
 }
+
 /*/submenu////////////*/
-.submenu{
-  position:absolute;
-  padding:13px ;
+.submenu {
+  position: absolute;
+  padding: 13px;
   background-color: #272727;
-  border-top:solid 5px #d63031;
+  border-top: solid 5px #d63031;
   list-style: none;
   width: 150px;
-  margin:6px;
-  display:none;
+  margin: 6px;
+  display: none;
 }
 
-.submenu >li > a{
+.submenu > li > a {
   display: block;
-  padding:12px 15px;
-  color:#bdc3c7;
+  padding: 12px 15px;
+  color: #bdc3c7;
   text-decoration: none;
   border-bottom: solid 1px #43434343;
   transition: all 0.3s ease;
 }
-header > div > ul > li:hover > .submenu{
-  left:3px;
-  display:block;
+header > div > ul > li:hover > .submenu {
+   left: 3px; 
+  display: block;
 }
 header > div > ul > li > .submenu:hover {
-  left:-5px;
+   left: -5px; 
   transition: all 0.3s ease;
 }
 
-
-.submenu > li:hover > a{
+.submenu > li:hover > a {
   background-color: #333438a5;
   border-radius: 3px;
   color: #c0392b;
 }
 
-
 /* icon phía phải menu///////////////////////////////////////////////////////////////////////////////////////////////// */
-
 .tail > a {
   margin-left: 10px;
   margin: 0px 10px;
 }
 
-/*/VIDEO GIF////////////////*/
-main > video {
-  display: block;
+/* NỘI DUNG////////////////////////////////////////// */
+#main_slogan {
+  padding-top: 140px;
+  padding-bottom: 50px;
   width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-.slogan {
-  color: #bdc3c7;
-  background-color: #27282b95;
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Căn giữa theo cả chiều ngang và dọc */
-}
-.main_logo {
-  font-weight: bold;
-  color:#bdc3c7;
-  background-color: #27282b95;
+  color: #c8cfd5;
   font-size: 20px;
-  position: absolute;
-  top: calc(47% + 25px); /* Đặt cách slogan 50px */
-  left: 50%;
-  transform: translateX(-50%);
-  /* Căn giữa theo chiều ngang */
+  text-align: center;
+  background-image: url("../img/character/bg.webp");
 }
-/* NỘI DUNG ///////////////////////////////////////////////// */
-.content{
-  margin-bottom: 35px;
-}
-div > p  {
-  width: 60%;
-  font-size: 19px;
-  margin: auto;
-}
-div > h2 {
+#main_slogan > p {
   width: 60%;
   margin: auto;
 }
-div > img {
-  display:block;
-  width: 60%;
-  margin: auto;
-}
-div > iframe{
-  display: block;
-  margin:auto;
-}
-.space{
-    width: 80%;
-    height: 4px;
-    border-bottom: 1px solid rgb(188, 185, 180);
-    margin:auto;
-  }
 
+/* AGENTS//////////////////////////////////// */
+.agents {
+  margin-bottom: 55px;
+}
+.agent {
+  width: 17%;
+  background-color: #ededed;
+  margin: 25px;
+  transition: all 0.3s ease;
+}
+.agent:hover{
+  background-color: #c7c7c7;
+  transform: scale(1.15);
+} 
+.agent > div > img {
+  width: 100%;
+}
+.agent > div > .name > img {
+  width: 20px;
+  cursor: pointer;
+}
+.agent > div > .name {
+  text-align: center;
+}
+
+/* MODAL HIỂN THỊ ẢNH AGENT/////////////////////////// */
+.modal {
+    display: none; /* Ẩn modal */
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Nền xám */
+}
+.modal-content { /*ben trong modal*/
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 800px;
+}
 
 /* ON FOOTER//////////////////////////////////////////// */
 .on_footer {
