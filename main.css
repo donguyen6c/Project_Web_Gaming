@@ -234,9 +234,6 @@ transition: all 0.4s ease;
   color:#1e1e1e ;
   border: solid 2px white;
 }
-.container > .right>  div.video{
-  height: 400px;
-}
 
 /* MIDDLE CONTENT 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .container2 {
