@@ -3,10 +3,14 @@
 * {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  
+  line-height: 1.7;
 }
 body {
-  background-color: #7f8fa6;
+  background-color: #e1ddd6;
+}
+a.link{
+  color:#000000;
+  font-weight: bold;
 }
 /* scrollbar ////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*độ to của scrollbar*/
@@ -38,8 +42,8 @@ header {
   line-height: 1.7;
   padding-bottom: 0px;
   left: 0;
-  right: 0;
-  z-index: 1000; /* Đặt z-index cao để menu nằm trên web */
+  right: 0; /* Đặt z-index cao để menu nằm trên video */
+  z-index: 1000;
 }
 header > div > button {
   margin-right: 15px;
@@ -71,15 +75,14 @@ button img {
   
 }
 #riot:hover {
-  content: url("img/valorant_icon/riot_icon.png");
+  content: url("../img/valorant_icon/riot_icon.png");
 }
 #valo {
   width: 80px;
-
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
 }
 #valo:hover {
-  content: url("img/valorant_icon/valorant_icon.png");
+  content: url("../img/valorant_icon/valorant_icon.png");
 }
 /*MENU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 header > div > ul > li {
@@ -136,195 +139,90 @@ header > div > ul > li > .submenu:hover {
 }
 
 
-
-
 /* icon phía phải menu///////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .tail > a {
   margin-left: 10px;
   margin: 0px 10px;
 }
-/*  */
-main > div > video {
-  background-color: rgb(0, 0, 0);
+
+/*/VIDEO GIF////////////////*/
+main > video {
   display: block;
   width: 100%;
   height: 100vh;
-  z-index: 1; /* Đặt video dưới nội dung */
-  /* position: relative; */
+  z-index: 1;
 }
-/* NỘI DUNG PHÍA TRÊN/////////////////////////////////////////////////////////////////////////////////////////////////// */
 .slogan {
-  color: #e2e2de;
-  font-size: 33px;
-  margin: 0;
-  padding: 5px;
+  color: #bdc3c7;
+  background-color: #27282b95;
   position: absolute;
-  top: 35%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%); /* Căn giữa theo cả chiều ngang và dọc */
 }
 .main_logo {
+  font-weight: bold;
+  color:#bdc3c7;
+  background-color: #27282b95;
+  font-size: 20px;
   position: absolute;
-  top: calc(35% + 25px); /* Đặt cách slogan 50px */
+  top: calc(47% + 25px); /* Đặt cách slogan 50px */
   left: 50%;
   transform: translateX(-50%);
   /* Căn giữa theo chiều ngang */
 }
-#main_button {
-  position: absolute;
-  top: calc(55% + 30px);
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff6b5dbd;
-  color: #111111dc;
-  padding: 10px 20px;
-  font-size: 26px;
-  outline: 1.8px solid white;
-  outline-offset: 3.5px;
+/* NỘI DUNG ///////////////////////////////////////////////// */
+.content{
+  margin-bottom: 35px;
+}
+div > p  {
+  width: 60%;
+  font-size: 19px;
+  margin: auto;
+}
+div > h2 {
+  width: 60%;
+  margin: auto;
+}
+div > img {
+  display:block;
+  width: 60%;
+  margin: auto;
+}
+div > iframe{
+  display: block;
+  margin:auto;
+}
+.space{
+    width: 80%;
+    height: 4px;
+    border-bottom: 1px solid rgb(188, 185, 180);
+    margin:auto;
+  }
+
+
+/* ON FOOTER//////////////////////////////////////////// */
+.on_footer {
+  background-color: #292929;
+  height: 40px;
+}
+.on_footer > a {
+  width: 10%;
+  color: #ccc8c2;
+  display: block;
+  text-align: center;
+  margin: auto;
   text-decoration: none;
-  transition: all 0.4s ease;
+  padding:6px;
+  transition: all 0.3s ease;
 }
-#main_button:hover {
-  background-color: #e2e2dea0;
-}
-
-/* MIDDLE CONTENT1///////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-/* Đặt ảnh nền cho container */
-.container {
-  position: relative; /* Để chứa phần tử con với position: absolute */
-  width: 100%;
-  height: 100vh;
-  background-image: url(img/valorant_icon/main_img_2.jpg);
-  background-size: cover; /* Để ảnh nền phủ kín */
-  background-position: center; /* Căn giữa ảnh nền */
-  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+#footer_button:hover {
+  background-color: #636e72;
+  border-radius: 13px;
 }
 
-/* Cố định văn bản trên ảnh nền */
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 22px;
-  width: 40%;
-  height: auto;
-  transform: translate(-115%, -75%);
-  line-height: 1.5;
-  color: #e2e2de;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.container > a{
-  position:absolute;
-  text-decoration: none;
-  top:calc(65% + 30px);
-  left: 2%;
-  background-color: #ff6b5dbd;
-  color:  #e2e2de;
-  font-size: 24px;
-  padding:13px;
-transition: all 0.4s ease;
-}
-.container>a:hover{
-  color:#1e1e1e ;
-  border: solid 2px white;
-}
-.container > div.video{
-  position:absolute;
-  top: 12%;
-  left: 50%;
-}
-/* MIDDLE CONTENT 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */
-.container2 {
-  position: relative; 
-  background-image: url(img/valorant_icon/nen_den_2.jpg);
-  width: 100%;
-  height: 100vh;
-    /* Căn giữa ảnh nền */
-  background-repeat: repeat; /*lặp lại ảnh nền */
-}
-.container2>.left{
-  width: 50%;
-}
-.container2>.left > img {
-  width: 80%;
-  margin-top:-150px;
-  margin-left:100px;
-}
-.container2>.right{
-  width: 50%;
-}
-.container2 > .right > .text2{
-  font-size: 25px;
-  line-height: 1.5;
-  text-align: left;
-  color:#e2e2de;
-  
-}
-.container2> .right > .text2 > a{
-  color:#111111;
-  background-color: #e2e2de;
-  text-decoration: none;
-  font-size: 24px;
-  padding:20px;
-transition: all 0.4s ease;
-}
-.container2> .right > .text2 > a:hover{
-  color: #e2e2de;
-  background-color:#c0392b;
-  border:solid 1px whitesmoke;
-  
-}
-/* MIDDLE CONTENT 3 /////////////////////////////////////////////////////////////////////////////////////////////////// */
-.container3 {
-  position: relative; 
-  background-image: url(img/valorant_icon/background_3.png);
-  width: 100%;
-  height: 100vh;
-}
-.container3 > .left {
-  width: 50%;
-}
-.container3 > .left > .text3{
-  margin-left:30px;
-  font-size: 25px;
-  line-height: 1.5;
-  text-align: left;
-}
-.container3 > .left > .text3>a{
-  
-  color:#dfe6e9;
-  background-color: #d63031;
-  text-decoration: none;
-  font-size: 24px;
-  padding:20px;
-transition: all 0.4s ease;  
-}
-.container3 > .left > .text3>a:hover{
-  background:#111111;
-}
-
-
-
-.container3 > .right > img {
-  width: 100%;
-}
-.container3 > .right {
-width: 50%;
-}
-
-
-
-
-
-
-
-
-
-/* FOOTER  //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* FOOTER ////////////////////////////////////////////////////*/
 footer {
   background-color: #1e1e1e;
 }
