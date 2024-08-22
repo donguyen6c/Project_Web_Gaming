@@ -145,8 +145,8 @@ header > div > ul > li > .submenu:hover {
 
 /* NỘI DUNG////////////////////////////////////////// */
 #main_slogan {
-  padding-top: 140px;
-  padding-bottom: 50px;
+  padding-top: 130px;
+  padding-bottom: 30px;
   width: 100%;
   color: #c8cfd5;
   font-size: 20px;
@@ -157,9 +157,17 @@ header > div > ul > li > .submenu:hover {
   width: 60%;
   margin: auto;
 }
-
+.mo_ta{
+  width: 60%;
+  padding-top: 20px;
+  font-size:20px;
+  color:#e2e2e2;
+  text-align: center;
+  margin: auto;
+}
 /* AGENTS///////////////////////////////////////////// */
 .agents {
+  margin-top:20px;
   margin-bottom: 55px;
 }
 .agent {
@@ -202,6 +210,50 @@ header > div > ul > li > .submenu:hover {
     width: 30%;
     max-width: 800px;
 }
+/* SELECTION cho AGENT///////////////////// */
+.selection{
+  width: 36%;
+  padding:10px 0px;
+  margin: auto;
+}
+
+.selection > a{
+  text-decoration: none;
+  color:#ededed;
+  text-align: center;
+  padding:8px;
+  background-color: rgb(93, 91, 91);
+  border:solid 1px #e5ebed;
+}
+.selection > a:hover{
+  color:white;
+  background-color: #252b2c;
+}
+.selection > a > img {
+  width: 20px;
+  margin-bottom:-3px ;
+}
+
+
+.selection a.active {
+   color:white;
+  background-color: #252b2c;
+}
+
+
+
+.agent.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 
 /* ON FOOTER//////////////////////////////////////////// */
 .on_footer {
