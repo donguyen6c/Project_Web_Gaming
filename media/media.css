@@ -1,16 +1,12 @@
-/* CHỈNH TỔNG QUÁT */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
+  padding: 0px;
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  line-height: 1.7;
 }
+
 body {
-  background-color: #e1ddd6;
-}
-a.link{
-  color:#000000;
-  font-weight: bold;
+  background-color: #bbb4a7;
 }
 /* scrollbar ////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*độ to của scrollbar*/
@@ -29,18 +25,21 @@ a.link{
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(39, 39, 39);
 }
+
 /* FLEX */
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 /* header/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 header {
   background-color: #1e1e1e;
-  position: fixed;
   line-height: 1.7;
+  position: fixed;
   padding-bottom: 0px;
+  top: 0;
   left: 0;
   right: 0; /* Đặt z-index cao để menu nằm trên video */
   z-index: 1000;
@@ -53,6 +52,7 @@ header > div > img {
 }
 /* nút âm thanh///////////////////////////////////////////////////////////////////////////////////////////////////////// */
 button {
+  margin-left: 5px;
   background: none; /* Loại bỏ bất kỳ nền nào được áp dụng */
   border-radius: 17px;
   border: none;
@@ -68,11 +68,11 @@ button img {
 .rechuot:hover {
   box-shadow: 5px 5px 5px 1px #ac4848;
 }
+
 #riot {
   width: 140px;
   margin-right: 30px;
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
-  
 }
 #riot:hover {
   content: url("../img/valorant_icon/riot_icon.png");
@@ -102,106 +102,109 @@ header > div > ul > li > a:hover {
   padding: 8px 8px;
   border-radius: 20px;
 }
-/*/submenu////////////*/
-.submenu{
-  position:absolute;
-  padding:13px ;
+
+/*/submenu////////////////////////////////////////////*/
+.submenu {
+  position: absolute;
+  padding: 13px;
   background-color: #272727;
-  border-top:solid 5px #d63031;
+  border-top: solid 5px #d63031;
   list-style: none;
   width: 150px;
   margin-left: 5px;
-  display:none;
+  display: none;
 }
 
-.submenu >li > a{
+.submenu > li > a {
   display: block;
-  padding:12px 15px;
-  color:#bdc3c7;
+  padding: 12px 15px;
+  color: #bdc3c7;
   text-decoration: none;
   border-bottom: solid 1px #43434343;
   transition: all 0.3s ease;
 }
-header > div > ul > li:hover > .submenu{
-  left:3px;
-  display:block;
+header > div > ul > li:hover > .submenu {
+  left: 3px;
+  display: block;
 }
 header > div > ul > li > .submenu:hover {
-  left:-5px;
+  left: -5px;
   transition: all 0.3s ease;
 }
 
-
-.submenu > li:hover > a{
+.submenu > li:hover > a {
   background-color: #333438a5;
   border-radius: 3px;
   color: #c0392b;
 }
 
-
 /* icon phía phải menu///////////////////////////////////////////////////////////////////////////////////////////////// */
-
 .tail > a {
   margin-left: 10px;
   margin: 0px 10px;
 }
 
-/*/VIDEO GIF////////////////*/
-main > video {
-  background-color: rgb(25, 25, 25);
-  display: block;
-  width: 100%;
-  height: 100vh;
+/* Content ////////////////////*/
+.left {
+  padding: 5px;
+  background-color: #e74c3c !important;
+  width: 75%;
+  margin-top: 65px;
+  height: 680px;
+  color: white;
+  text-align: center;
+  font-size: 140px;
+}
+.right {
+  width: 40%;
+}
+/* Video*/
+#vid {
+  width: 650px;
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  top: 48%;
+  left: 73%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
-.slogan {
-  color: #bdc3c7;
-  background-color: #27282b95;
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Căn giữa theo cả chiều ngang và dọc */
-}
-.main_logo {
-  font-weight: bold;
-  color:#bdc3c7;
-  background-color: #27282b95;
-  font-size: 20px;
-  position: absolute;
-  top: calc(45% + 50px); /* Đặt cách slogan 50px */
-  left: 50%;
-  transform: translateX(-50%);
-  /* Căn giữa theo chiều ngang */
-}
-/* NỘI DUNG ///////////////////////////////////////////////// */
-.content{
-  margin-bottom: 35px;
-}
-div > p  {
-  width: 60%;
-  font-size: 19px;
+/* sub content */
+.h1 {
   margin: auto;
+  margin-right: 300px;
+  margin-top: 10px;
+  font-size: 110px;
 }
-div > h2 {
-  width: 60%;
-  margin: auto;
-}
-div > img {
-  display:block;
-  width: 60%;
-  margin: auto;
-}
-div > iframe{
-  display: block;
-  margin:auto;
-}
-.space{
-    width: 80%;
-    height: 4px;
-    border-bottom: 1px solid rgb(188, 185, 180);
-    margin:auto;
-  }
 
+.h2 {
+  margin: 40px;
+  font-size: 20px;
+  width: 60%;
+  text-align: start;
+  line-height: 1.5;
+}
+#vien {
+  margin: 15px 0 15px 0;
+  border: 2px solid white;
+}
+
+.sub img {
+  width: 100%;
+  transition: transform 0.2s;
+}
+.sub {
+  width: 33%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 2px 2px;
+}
+.subs {
+  flex-wrap: wrap;
+}
+.sub > div:hover img {
+  background: #fff;
+}
 
 /* ON FOOTER//////////////////////////////////////////// */
 .on_footer {
@@ -209,13 +212,13 @@ div > iframe{
   height: 40px;
 }
 .on_footer > a {
-  width: 40%;
+  width: 10%;
   color: #ccc8c2;
   display: block;
   text-align: center;
   margin: auto;
   text-decoration: none;
-  padding:6px;
+  padding: 10px;
   transition: all 0.3s ease;
 }
 #footer_button:hover {
@@ -223,7 +226,7 @@ div > iframe{
   border-radius: 13px;
 }
 
-/* FOOTER ////////////////////////////////////////////////////*/
+/* FOOTER  //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 footer {
   background-color: #1e1e1e;
 }

@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/valorant_icon/shortcut.png">
     <link rel="stylesheet" href="main.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link rel="stylesheet" href="respon1.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>VALORANT HOMEPAGE</title>
   </head>
   <body>
@@ -35,19 +35,19 @@
         <a style="margin-right:35px;" href="index.html" target="_blank">
         <img  id="valo" src="img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
         
-        <li><a href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a>
+        <li id="menu1"><a href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a>
         <ul class="submenu">
-          <li><a href="#">TÌM HIỂU GAME</a></li>
-          <li><a href="#">AGENTS</a></li>
-          <li><a href="#">MAPS</a></li>
+          <li><a href="guide/guide.html" target="_blank">TÌM HIỂU GAME</a></li>
+          <li><a href="character/character.html" target="_blank">AGENTS</a></li>
+          <li><a href="map/map.html" target="_blank">MAPS</a></li>
         </ul>
         
         </li>
-        <li><a href="#">TIN TỨC</a></li>
-        <li><a href="support/support.html">TRUYỀN THÔNG</a></li>
-        <li><a href="#">HỖ TRỢ</a></li>
+        <li id="menu2"><a href="#">TIN TỨC</a></li>
+        <li id="menu3"><a href="media/media.html" target="_blank">TRUYỀN THÔNG</a></li>
+        <li id="menu4"><a href="#">HỖ TRỢ</a></li>
         <!-- <li><a href="#">MẠNG XÃ HỘI</a></li> -->
-        <li><a href="#">VỀ CHÚNG TÔI</a></li>
+        <li id="menu5"><a href="#">VỀ CHÚNG TÔI</a></li>
         
     </div>
 
@@ -59,8 +59,51 @@
           <a class="rechuot" href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img src="img/icon/youtube.png"alt="youtube" /></a>
           <a class="rechuot" href="https://www.instagram.com/valorantvn" target="_blank"><img src="img/icon/ins.png" alt="ins" /></a>
         </div>
-      </ul>
+     <div id="menu_mobile">
+        <div >
+          <a href="#"><img src="img/icon/rows.png"></a>
+     </div>
     </header>
+<section>
+<div id="overlay"></div>
+<div class="mobile flex">
+        <a href="index.html" target="_blank">
+        <img style="width: 100px;" id="valo1" src="img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
+        
+        <li ><a id="sub" href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a></li>
+        
+          <li class="submn"><a href="guide/guide.html" target="_blank">TÌM HIỂU GAME</a></li>
+          <li class="submn"><a href="character/character.html" target="_blank">AGENTS</a></li>
+          <li class="submn"><a href="map/map.html" target="_blank">MAPS</a></li>
+    
+        
+        <li ><a href="#">TIN TỨC</a></li>
+        <li ><a href="media/media.html" target="_blank">TRUYỀN THÔNG</a></li>
+        <li ><a href="#">HỖ TRỢ</a></li>
+        <!-- <li><a href="#">MẠNG XÃ HỘI</a></li> -->
+        <li ><a href="#">VỀ CHÚNG TÔI</a></li>
+
+
+
+        <li id="tail_mobile">
+          <a class="rechuot" href="https://www.facebook.com/VALORANTvn/" target="_blank"
+            ><img style="width: 40px;" src="img/icon/fb.png" alt="fb"
+          /></a>
+          <a class="rechuot" href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img src="img/icon/youtube.png"alt="youtube" /></a>
+
+          <a class="rechuot" href="https://www.instagram.com/valorantvn" target="_blank"><img src="img/icon/ins.png" alt="ins" /></a>
+        </li>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
  <main>
   <div>
     <!-- <img src="img/valorant_icon/main_gif.gif" alt="main_gif"/> -->
@@ -69,28 +112,38 @@
     </video> 
     
     <p class="slogan" style="background-color: #2f364054;">A 5v5 character-based tactical shooter </p>
-    <a class="main_logo" style="background-color: #c03a2b66;"><img style="width: 500px;" src="img/valorant_icon/main_logo.png" alt="logo"></a>
+    <a class="main_logo" style="background-color: #c03a2b66;"><img  src="img/valorant_icon/main_logo.png" alt="logo"></a>
     <a id="main_button" href="#">CHƠI NGAY</a>
     
   </div>
 </main> 
-<div class="container">
+<div class="container flex">
+  <div class="left">
         <div class="text">
-            <h1><b>CHÚNG TÔI LÀ VALORANT</b></h1>
+            <h1>CHÚNG TÔI LÀ VALORANT</h1>
             <p style="font-size:35;">THÁCH THỨC MỌI GIỚI HẠN</p>
             <p>Mang phong cách và trải nghiệm cá nhân tới đấu trường cạnh tranh toàn cầu. Sử dụng kỹ năng đấu súng cùng với lối tư duy chiến thuật sắc bén với hai phe tấn công và phòng thủ, thành bại được định đoạt chỉ trong 13 vòng đấu. Với chỉ 1 mạng mỗi vòng đấu, sự nhanh nhẹn và quyết đoán sẽ là yếu tố giúp bạn sống sót. Trải nghiệm VALORANT trong các chế độ chơi: Đấu Xếp Hạng, Đấu Thường, Sinh Tử và Spike Thần Tốc.</p>
         </div>
+        
         <a href="guide/guide.html" target="_blank"><b>TÌM HIỂU THÊM</b></a>
-        <div class="video">
-          <iframe  width="710" height="400" src="https://www.youtube.com/embed/1o-DMei4BEU?si=562QO4LtJ4S9W1td" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
+
+
+
+
+<div class="right">
+        <div class="video">
+          <iframe  width="95%" height="400px" src="https://www.youtube.com/embed/1o-DMei4BEU?si=562QO4LtJ4S9W1td" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
 </div>
 <div class="container2 flex">
   <div class="left">
     <img src="img/valorant_icon/jettt.png" alt="char">
   </div>
   <div class="right flex">
-  <div class="text2">
+  <div  class="text2">
             <h1>YOUR AGENTS</h1>
             <p style="font-size:35;">SÁNG TẠO LÀ VŨ KHÍ TỐI THƯỢNG CỦA BẠN</p>
             <p>Ngoài việc trang bị súng đạn, hãy chọn cho riêng mình một Agent có kỹ năng phù hợp với lối chơi của bạn để giúp bạn tỏa sáng trong nhẫn màn đấu súng khốc liệt tại VALORANT.</p>
@@ -105,7 +158,7 @@
   <div class="left flex">
     <div class="text3">
     <h1>YOUR MAPS</h1>
-            <p style="font-size:35;">CHIẾN ĐẤU KHẮP THẾ GIỚI</p>
+            <p >CHIẾN ĐẤU KHẮP THẾ GIỚI</p>
             <p>Mỗi bản đồ đều là một sân chơi để bạn thỏa sức thể hiện tư duy sáng tạo của mình. Được xây dựng với mục đích phát triển chiến lược đội nhóm, các bản đồ VALORANT hứa hẹn mang đến cho người chơi những trận giao tranh ngoạn ngục cùng với muôn vàn khoảnh khắc xuất thần. Hãy là nguồn cảm hứng cho tất cả người chơi VALORANT và tạo ra cho mình lối chơi độc nhất vô nhị.</p>
             <br>
             <a href="#"><b>KHÁM PHÁ CÁC MAPS</b></a>
@@ -120,6 +173,23 @@
 
 
 
+
+
+<section id="footer_mobile">
+  <div class="logo flex">
+  <img style="width:13%" src="img/valorant_icon/riot_icon_1.png" alt="riot">
+  <img style="width:8%" src="img/valorant_icon/vng1.png" alt="vng">
+  <img style="width:10%" src="img/valorant_icon/valorant_icon_2.png" alt="valo">
+  </div>
+  <div>&copy; năm 2020 - 2024 bởi Riot Games, Inc. RIOT GAMES, VALORANT và mọi logo liên quan là nhãn hiệu, nhân hiệu dịch vụ và/hoặc nhân hiệu đã đăng ký của Riot Games, Inc.</div>
+  <div>Công Ty Cổ Phần VNG. Địa chỉ: Lô 036-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</div>
+  
+  <div class="flex">
+  <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+  <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+  <a href="#">TRUNG TÂM TRỢ GIÚP</a>
+  </div>
+</section>
 
 <footer>
   <div class="logo flex">
@@ -136,6 +206,7 @@
   <a href="#">TRUNG TÂM TRỢ GIÚP</a>
   </div>
 </footer>
+
   </body>
   <script src="main.js"></script>
 

@@ -1,0 +1,248 @@
+/* RESPONSIVE////////////////////////////////////////////////////// */
+#menu_mobile {
+  width: 100px;
+  display: none;
+}
+.mobile > a > img {
+  padding-top: 10px;
+}
+.mobile {
+  display: none;
+  z-index: 990;
+  width: 60%;
+  position: fixed;
+  top: 75px;
+  right: 0;
+  background-color: #1e1e1e;
+  flex-direction: column;
+  text-align: center;
+}
+.mobile > li {
+  list-style-type: none;
+  padding: 14px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.mobile > li > a {
+  text-decoration: none;
+  color: #b2bec3;
+  font-size: larger;
+}
+.mobile > li:hover {
+  background-color: #322f2f;
+}
+.mobile > li:hover > a {
+  color: rgb(185, 74, 74);
+}
+.submn {
+  display: none;
+}
+.submn > a {
+  color: rgb(138, 137, 137) !important;
+  border-bottom: 1px solid #eae8e8;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.584); /* Màu nền xám với độ mờ 50% */
+  display: none; /* Ẩn lớp phủ mặc định */
+  z-index: 990; /* Đặt thấp hơn lớp .mobile nhưng cao hơn các nội dung khác */
+}
+#tail_mobile > a {
+  padding: 10px;
+}
+/* FOOTER ON MOBILE /////////////////////////////////////////////// */
+#footer_mobile > div {
+  flex-direction: column;
+  font-size: 14px;
+}
+#footer_mobile > div.logo {
+  flex-direction: row;
+  width: 100%;
+}
+#footer_mobile {
+  display: none;
+  background-color: #1e1e1e;
+}
+#footer_mobile > div > img {
+  margin: 20px;
+}
+#footer_mobile > div.logo {
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: center;
+}
+#footer_mobile > div {
+  text-align: center; /* Căn giữa văn bản theo chiều ngang */
+  margin: auto;
+  padding: 10px 0px;
+  color: #555555;
+}
+#footer_mobile > div > a {
+  text-decoration: none;
+  justify-content: center;
+  color: #b2bec3;
+  padding: 7px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+/* mobile////////////////////////////////////////////////////////// */
+
+/* XỬ LÝ RESPONSIVE CHO HEADER MENU/////////////////////////////////*/
+@media only screen and (min-width: 1383px) and (max-width: 1396px) {
+  header > div > ul > li:hover > a {
+    color: #c0392b;
+    background-color: #272727;
+    padding: 0px;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 1383px) {
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4,
+  #menu5 {
+    display: none;
+  }
+  #menu_mobile {
+    display: block;
+    margin-right: 0px;
+  }
+  div > p,
+  div > h2,
+  div > iframe,
+  div.content > img {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width:1200px){
+   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e74c3c ;
+    padding: 10px;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: 500px;
+  }
+  #vien{
+    padding:40px 20px;
+  }
+  .h2,.h1{
+    width: 85%;
+    margin: auto;
+  }
+  .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Đảm bảo .right chiếm toàn bộ chiều cao màn hình */
+}
+#vid {
+  width: 95%;
+  height: 80%;
+  position: static;
+  transform: none;
+  margin-top: 0px;
+}
+.sub{
+  width: 49%;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  /*FOOTER MOBILE////////////////////////////////////////////*/
+  footer {
+    display: none;
+  }
+  #footer_mobile {
+    display: block;
+  }
+  .tail {
+    display: none;
+  }
+  /*  */
+  .mobile > li {
+    margin: 6px auto;
+  }
+.h1{
+  font-size: 80px;
+}
+ .left{
+  height: 480px;
+ }
+ .right{
+  height:450px;
+ }
+ .h2,.h1{
+  width: 100%;
+ }
+ #vid{
+  padding:0px;
+ }
+ #footer_button{
+  width: 50%;
+ }
+}
+
+@media only screen and (max-width:700px){
+  h2{
+    font-size: 18px;
+  }
+.sub{
+    margin: 20px 0px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .h1{
+    font-size: 45px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  h4{
+    font-size: 13px;
+  }
+  .right{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  #sound,
+  #riot {
+    margin-right: 0px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #valo {
+    margin-right: -10px;
+  }
+  .mobile {
+    width: 100%;
+  }
+  .h1{
+    font-size: 35px;
+  }
+  #vid{
+    height: auto;
+    margin-top: 45px;
+  }
+  h2{
+    font-size: 15px;
+  }
+}
