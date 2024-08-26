@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* /////////////// */
@@ -27,6 +28,7 @@ header {
     right: -5px;
     width: 100%;
     margin-bottom: 50px;
+    z-index: 999;
 }
 
 header>div>button {
@@ -84,20 +86,63 @@ div > h3{
     margin:10px 630px 0 40px;
     text-wrap: wrap;
 }
-section >div{
+.content{
+    display: block;
+}
+/* maps */
+.maps{
+    width: 100%;
+    margin-top: 50px;
+}
 
-}
-.innerWrapper img{
+.maps .thumb .df{
     width: 100%;
-    margin-top: 10px;
-}
-.miniPic{
-    width: 20%;
-    height: 100px;
-    box-sizing: border-box;
-    margin: 5px 5px 0 0;
-}
-.miniPic img{
-    width: 100%;
+    margin-bottom: 30px;
     
+}
+.maps .thumb .sub{
+    width: 16%;
+    box-sizing: border-box;
+}
+/* FOOTER ////////////////////// */
+
+footer {
+    background-color: #1e1e1e;
+}
+
+footer>div>img {
+    margin: 0 20px;
+}
+
+footer>div.logo {
+    padding-top: 20px;
+    justify-content: center;
+}
+
+footer>div {
+    text-align: center;
+    /* Căn giữa văn bản theo chiều ngang */
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    color: #555555;
+}
+
+footer>div>a {
+    text-decoration: none;
+    justify-content: center;
+    color: #b2bec3;
+    padding: 7px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+footer>div>a:hover {
+    background-color: #636e7271;
+    border-radius: 20px;
+}
+/* map.css */
+.df {
+    transition: opacity 0.2s ease-in-out; /* Thay đổi thời gian và hiệu ứng chuyển đổi */
+    opacity: 1; /* Đảm bảo ảnh chính luôn hiển thị rõ ràng */
 }
