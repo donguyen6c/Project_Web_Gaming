@@ -120,11 +120,11 @@ header > div > ul > li:hover > a {
   transition: all 0.3s ease;
 }
 header > div > ul > li:hover > .submenu {
-  left: 3px;
+  left: 3px; 
   display: block;
 }
 header > div > ul > li > .submenu:hover {
-  left: -5px;
+  
   transition: all 0.3s ease;
 }
 

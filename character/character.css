@@ -115,7 +115,7 @@ header > div > ul > li > a:hover {
   border-top: solid 5px #d63031;
   list-style: none;
   width: 150px;
-  margin: 6px;
+  margin-left: 5px;
   display: none;
 }
 
