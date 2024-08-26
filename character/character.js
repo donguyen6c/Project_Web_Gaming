@@ -91,3 +91,42 @@ document.querySelectorAll('.selection > a').forEach(link => {
 window.onload = function() {
     filterAgents('all');
 };
+
+
+
+
+
+
+// MENU RESPONSIVE //////////////////////////////////
+$(document).ready(function () {
+  $("#menu_mobile").click(function (event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+
+    // Kiểm tra trạng thái hiện tại của #valo và chuyển đổi giữa display: none và display: block;
+    if ($("#valo").css("display") === "none") {
+      $("#valo").css("display", "block");
+      $("#overlay").fadeOut(); // Ẩn lớp phủ với hiệu ứng mờ dần
+    } else {
+      $("#valo").css("display", "none");
+      $("#overlay").fadeIn(); // Hiển thị lớp phủ với hiệu ứng mờ dần
+    }
+
+    // Thực hiện slideToggle cho .mobile
+    $(".mobile").slideToggle();
+  });
+});
+
+
+
+
+// ///////////////////////////////////////////////////////
+$(document).ready(function () {
+  $("#sub").click(function (event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+    if ($(".submn").css("display") === "none") {
+      $(".submn").css("display", "block"); // Hiển thị phần tử submn
+    } else {
+      $(".submn").css("display", "none"); 
+    }
+  });
+});

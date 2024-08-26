@@ -3,11 +3,11 @@
 * {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  
 }
 body {
-  background-color: #7f8fa6;
+  background-color: #1e1e1e;
 }
+
 /* scrollbar ////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*độ to của scrollbar*/
 ::-webkit-scrollbar {
@@ -68,17 +68,17 @@ button img {
   width: 140px;
   margin-right: 30px;
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
-  
 }
 #riot:hover {
   content: url("img/valorant_icon/riot_icon.png");
 }
-#valo {
+#valo,
+#valo1 {
   width: 80px;
-
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
 }
-#valo:hover {
+#valo:hover,
+#valo1:hover {
   content: url("img/valorant_icon/valorant_icon.png");
 }
 /*MENU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -93,50 +93,46 @@ header > div > ul > li > a {
   padding: 8px 0px;
   transition: all 0.3s ease;
 }
-header > div > ul > li > a:hover {
+header > div > ul > li:hover > a {
   color: #c0392b;
   background-color: #272727;
   padding: 8px 8px;
   border-radius: 20px;
 }
 /*/submenu////////////*/
-.submenu{
-  position:absolute;
-  padding:13px ;
+.submenu {
+  position: absolute;
+  padding: 13px;
   background-color: #272727;
-  border-top:solid 5px #d63031;
+  border-top: solid 5px #d63031;
   list-style: none;
   width: 150px;
-  margin:6px;
-  display:none;
+  margin-left: 5px;
+  display: none;
 }
 
-.submenu >li > a{
+.submenu > li > a {
   display: block;
-  padding:12px 15px;
-  color:#bdc3c7;
+  padding: 12px 15px;
+  color: #bdc3c7;
   text-decoration: none;
   border-bottom: solid 1px #43434343;
   transition: all 0.3s ease;
 }
-header > div > ul > li:hover > .submenu{
-  left:3px;
-  display:block;
+header > div > ul > li:hover > .submenu {
+  left: 3px;
+  display: block;
 }
 header > div > ul > li > .submenu:hover {
-  left:-5px;
+  left: -5px;
   transition: all 0.3s ease;
 }
 
-
-.submenu > li:hover > a{
+.submenu > li:hover > a {
   background-color: #333438a5;
   border-radius: 3px;
   color: #c0392b;
 }
-
-
-
 
 /* icon phía phải menu///////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -151,7 +147,6 @@ main > div > video {
   width: 100%;
   height: 100vh;
   z-index: 1; /* Đặt video dưới nội dung */
-  /* position: relative; */
 }
 /* NỘI DUNG PHÍA TRÊN/////////////////////////////////////////////////////////////////////////////////////////////////// */
 .slogan {
@@ -160,6 +155,7 @@ main > div > video {
   margin: 0;
   padding: 5px;
   position: absolute;
+  text-align: center;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%); /* Căn giữa theo cả chiều ngang và dọc */
@@ -170,6 +166,9 @@ main > div > video {
   left: 50%;
   transform: translateX(-50%);
   /* Căn giữa theo chiều ngang */
+}
+.main_logo >img{
+  width: 500px;
 }
 #main_button {
   position: absolute;
@@ -190,15 +189,15 @@ main > div > video {
 }
 
 /* MIDDLE CONTENT1///////////////////////////////////////////////////////////////////////////////////////////////////// */
-.right{
+.right {
   width: 50%;
 }
-.left{
+.left {
   width: 50%;
 }
 /* Đặt ảnh nền cho container */
 .container {
- /* Để chứa phần tử con với position: absolute */
+  /* Để chứa phần tử con với position: absolute */
   width: 100%;
   height: 100vh;
   background-image: url(img/valorant_icon/main_img_2.jpg);
@@ -212,67 +211,67 @@ main > div > video {
   font-size: 22px;
   line-height: 1.7;
   text-align: left;
-  color:#e2e2de;
+  color: #e2e2de;
   margin: 10px;
   margin-bottom: 30px;
-  padding:20px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.container > .left > a{
+.container > .left > a {
   text-decoration: none;
 
-
   background-color: #ff6b5dbd;
-  color:  #e2e2de;
+  color: #e2e2de;
   font-size: 24px;
   margin: 10px;
-  padding:13px;
-transition: all 0.4s ease;
+  padding: 13px;
+  transition: all 0.4s ease;
 }
-.container> .left>a:hover{
-  color:#1e1e1e ;
+.container > .left > a:hover {
+  color: #1e1e1e;
   border: solid 2px white;
 }
 
 /* MIDDLE CONTENT 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .container2 {
-  position: relative; 
+  position: relative;
   background-image: url(img/valorant_icon/nen_den_2.jpg);
   width: 100%;
   height: 100vh;
-    /* Căn giữa ảnh nền */
+  /* Căn giữa ảnh nền */
   background-repeat: repeat; /*lặp lại ảnh nền */
 }
 
-.container2>.left > img {
+.container2 > .left > img {
   width: 80%;
   margin: auto;
 }
 
-.container2 > .right > .text2{
+.container2 > .right > .text2 {
   font-size: 25px;
   line-height: 1.5;
   text-align: left;
-  color:#e2e2de;
+  color: #e2e2de;
+   margin-top: 30px;
+  margin-bottom: 50px; 
 }
-.container2> .right > .text2 > a{
-  color:#111111;
+.container2 > .right > .text2 > a {
+  color: #111111;
   background-color: #e2e2de;
   text-decoration: none;
   font-size: 24px;
-  padding:20px;
+  padding: 20px;
   transition: all 0.4s ease;
 }
-.container2> .right > .text2 > a:hover{
+.container2 > .right > .text2 > a:hover {
   color: #e2e2de;
-  background-color:#c0392b;
-  border:solid 1px whitesmoke;
-  
+  background-color: #c0392b;
+  border: solid 1px whitesmoke;
 }
 /* MIDDLE CONTENT 3 /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .container3 {
-  position: relative; 
+  position: relative;
   background-image: url(img/valorant_icon/background_3.png);
   width: 100%;
   height: 100vh;
@@ -280,41 +279,30 @@ transition: all 0.4s ease;
 .container3 > .left {
   width: 50%;
 }
-.container3 > .left > .text3{
-  margin-left:30px;
+.container3 > .left > .text3 {
+  margin-left: 15px;
   font-size: 25px;
   line-height: 1.5;
   text-align: left;
 }
-.container3 > .left > .text3>a{
-  
-  color:#dfe6e9;
+.container3 > .left > .text3 > a {
+  color: #dfe6e9;
   background-color: #d63031;
   text-decoration: none;
   font-size: 24px;
-  padding:20px;
-transition: all 0.4s ease;  
+  padding: 20px;
+  transition: all 0.4s ease;
 }
-.container3 > .left > .text3>a:hover{
-  background:#111111;
+.container3 > .left > .text3 > a:hover {
+  background: #111111;
 }
-
-
 
 .container3 > .right > img {
   width: 100%;
 }
 .container3 > .right {
-width: 50%;
+  width: 50%;
 }
-
-
-
-
-
-
-
-
 
 /* FOOTER  //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 footer {
@@ -346,3 +334,4 @@ footer > div > a:hover {
   background-color: #636e7271;
   border-radius: 20px;
 }
+

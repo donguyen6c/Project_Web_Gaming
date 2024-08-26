@@ -148,6 +148,7 @@ header > div > ul > li > .submenu:hover {
 
 /*/VIDEO GIF////////////////*/
 main > video {
+  background-color: rgb(25, 25, 25);
   display: block;
   width: 100%;
   height: 100vh;
@@ -167,7 +168,7 @@ main > video {
   background-color: #27282b95;
   font-size: 20px;
   position: absolute;
-  top: calc(47% + 25px); /* Đặt cách slogan 50px */
+  top: calc(45% + 50px); /* Đặt cách slogan 50px */
   left: 50%;
   transform: translateX(-50%);
   /* Căn giữa theo chiều ngang */
@@ -208,7 +209,7 @@ div > iframe{
   height: 40px;
 }
 .on_footer > a {
-  width: 10%;
+  width: 40%;
   color: #ccc8c2;
   display: block;
   text-align: center;

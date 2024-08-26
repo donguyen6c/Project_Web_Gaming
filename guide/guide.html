@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/valorant_icon/shortcut.png">
     <link href="guide.css" rel="stylesheet">
+    <link rel="stylesheet" href="respon2.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>VALORANT GUIDE</title>
 </head>
 <body>
@@ -28,24 +30,24 @@
 
       <div >
       <ul style="padding-left:0px;" class="middle flex">
-        <a href="https://www.riotgames.com/vi" target="_blank">
+        <a  href="https://www.riotgames.com/vi" target="_blank">
         <img id="riot" src="../img/valorant_icon/riot_icon_1.png" alt="riot" /></a>
-        <a style="margin-right:35px;" href="../index.html" target="_blank">
-        <img id="valo" src="../img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
+        <a style="margin-right:35px;" href="index.html" target="_blank">
+        <img  id="valo" src="../img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
         
-        <li><a href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a>
+        <li id="menu1"><a href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a>
         <ul class="submenu">
-          <li><a href="#">TÌM HIỂU GAME</a></li>
-          <li><a href="#">AGENTS</a></li>
-          <li><a href="#">MAPS</a></li>
+          <li><a href="../guide/guide.html" target="_blank">TÌM HIỂU GAME</a></li>
+          <li><a href="../character/character.html" target="_blank">AGENTS</a></li>
+          <li><a href="../map/map.html" target="_blank">MAPS</a></li>
         </ul>
         
         </li>
-        <li><a href="#">TIN TỨC</a></li>
-        <li><a href="../support/support.html">TRUYỀN THÔNG</a></li>
-        <li><a href="#">HỖ TRỢ</a></li>
+        <li id="menu2"><a href="#">TIN TỨC</a></li>
+        <li id="menu3"><a href="../media/media.html" target="_blank">TRUYỀN THÔNG</a></li>
+        <li id="menu4"><a href="#">HỖ TRỢ</a></li>
         <!-- <li><a href="#">MẠNG XÃ HỘI</a></li> -->
-        <li><a href="#">VỀ CHÚNG TÔI</a></li>
+        <li id="menu5"><a href="#">VỀ CHÚNG TÔI</a></li>
         
     </div>
 
@@ -57,10 +59,43 @@
           <a class="rechuot" href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img src="../img/icon/youtube.png"alt="youtube" /></a>
           <a class="rechuot" href="https://www.instagram.com/valorantvn" target="_blank"><img src="../img/icon/ins.png" alt="ins" /></a>
         </div>
-      </ul>
+     <div id="menu_mobile">
+        <div >
+          <a href="#"><img src="../img/icon/rows.png"></a>
+     </div>
     </header>
+<section>
+<div id="overlay"></div>
+<div class="mobile flex">
+        <a href="index.html" target="_blank">
+        <img style="width: 100px;" id="valo1" src="../img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
+        
+        <li ><a id="sub" href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a></li>
+        
+          <li class="submn"><a href="guide/guide.html" target="_blank">TÌM HIỂU GAME</a></li>
+          <li class="submn"><a href="../character/character.html" target="_blank">AGENTS</a></li>
+          <li class="submn"><a href="../map/map.html" target="_blank">MAPS</a></li>
+    
+        <li ><a href="#">TIN TỨC</a></li>
+        <li ><a href="../media/media.html" target="_blank">TRUYỀN THÔNG</a></li>
+        <li ><a href="#">HỖ TRỢ</a></li>
+        <!-- <li><a href="#">MẠNG XÃ HỘI</a></li> -->
+        <li ><a href="#">VỀ CHÚNG TÔI</a></li>
 
-    <main style="background-color: rgb(25, 25, 25);">
+        <li id="tail_mobile">
+          <a class="rechuot" href="https://www.facebook.com/VALORANTvn/" target="_blank"
+            ><img style="width: 40px;" src="../img/icon/fb.png" alt="fb"
+          /></a>
+          <a class="rechuot" href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img src="../img/icon/youtube.png"alt="youtube" /></a>
+
+          <a class="rechuot" href="https://www.instagram.com/valorantvn" target="_blank"><img src="../img/icon/ins.png" alt="ins" /></a>
+        </li>
+
+</div>
+
+</section>
+
+    <main >
     <video autoplay loop muted>
     <source src="../img/valorant_guide/iso_gif.mp4" type="video/mp4">
     </video> 
@@ -156,6 +191,22 @@ Bạn sẽ bắt đầu vòng đấu ở bên tấn công hoặc bên phòng th�
 <div class="on_footer">
 <a id="footer_button" href="#">CHƠI NGAY</a>
 </div>
+
+<section id="footer_mobile">
+  <div class="logo flex">
+  <img style="width:13%" src="../img/valorant_icon/riot_icon_1.png" alt="riot">
+  <img style="width:8%" src="../img/valorant_icon/vng1.png" alt="vng">
+  <img style="width:10%" src="../img/valorant_icon/valorant_icon_2.png" alt="valo">
+  </div>
+  <div>&copy; năm 2020 - 2024 bởi Riot Games, Inc. RIOT GAMES, VALORANT và mọi logo liên quan là nhãn hiệu, nhân hiệu dịch vụ và/hoặc nhân hiệu đã đăng ký của Riot Games, Inc.</div>
+  <div>Công Ty Cổ Phần VNG. Địa chỉ: Lô 036-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</div>
+  
+  <div class="flex">
+  <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+  <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+  <a href="#">TRUNG TÂM TRỢ GIÚP</a>
+  </div>
+</section>
 
   <footer> 
   <div class="logo flex">

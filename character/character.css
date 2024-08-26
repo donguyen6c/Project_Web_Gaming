@@ -34,6 +34,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* header/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 header {
   background-color: #1e1e1e;
@@ -261,7 +266,7 @@ header > div > ul > li > .submenu:hover {
   height: 40px;
 }
 .on_footer > a {
-  width: 10%;
+  width: 40%;
   color: #ccc8c2;
   display: block;
   text-align: center;

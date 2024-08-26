@@ -1,0 +1,254 @@
+/* RESPONSIVE////////////////////////////////////////////////////// */
+#menu_mobile {
+  width: 100px;
+  display: none;
+}
+.mobile > a > img {
+  padding-top: 10px;
+}
+.mobile {
+  display: none;
+  z-index: 990;
+  width: 60%;
+  position: fixed;
+  top: 75px;
+  right: 0;
+  background-color: #1e1e1e;
+  flex-direction: column;
+  text-align: center;
+}
+.mobile > li {
+  list-style-type: none;
+  padding: 14px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.mobile > li > a {
+  text-decoration: none;
+  color: #b2bec3;
+  font-size: larger;
+}
+.mobile > li:hover {
+  background-color: #322f2f;
+}
+.mobile > li:hover > a {
+  color: rgb(185, 74, 74);
+}
+.submn {
+  display: none;
+}
+.submn > a {
+  color: rgb(138, 137, 137) !important;
+  border-bottom: 1px solid #eae8e8;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.584); /* Màu nền xám với độ mờ 50% */
+  display: none; /* Ẩn lớp phủ mặc định */
+  z-index: 990; /* Đặt thấp hơn lớp .mobile nhưng cao hơn các nội dung khác */
+}
+#tail_mobile > a {
+  padding: 10px;
+}
+/* FOOTER ON MOBILE /////////////////////////////////////////////// */
+#footer_mobile > div {
+  flex-direction: column;
+  font-size: 14px;
+}
+#footer_mobile > div.logo {
+  flex-direction: row;
+  width: 100%;
+}
+#footer_mobile {
+  display: none;
+  background-color: #1e1e1e;
+}
+#footer_mobile > div > img {
+  margin: 20px;
+}
+#footer_mobile > div.logo {
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: center;
+}
+#footer_mobile > div {
+  text-align: center; /* Căn giữa văn bản theo chiều ngang */
+  margin: auto;
+  padding: 10px;
+  color: #555555;
+}
+#footer_mobile > div > a {
+  text-decoration: none;
+  justify-content: center;
+  color: #b2bec3;
+  padding: 7px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+/* mobile////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 1441px) {
+  section.selection > a {
+    margin-right: 10px;
+  }
+}
+/* XỬ LÝ RESPONSIVE CHO HEADER MENU/////////////////////////////////*/
+@media only screen and (min-width: 1383px) and (max-width: 1396px) {
+  header > div > ul > li:hover > a {
+    color: #c0392b;
+    background-color: #272727;
+    padding: 0px;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 1383px) {
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4,
+  #menu5 {
+    display: none;
+  }
+  #menu_mobile {
+    display: block;
+    margin-right: 10px;
+  }
+  div > p,
+  div > h2,
+  div > iframe,
+  div.content > img {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .agent {
+    width: 20%;
+  }
+  p {
+    font-size: 30px;
+  }
+   .selection {
+    padding: 40px 0px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .agent {
+    width: 27%;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+  /*FOOTER MOBILE////////////////////////////////////////////*/
+  
+  footer {
+    display: none;
+  }
+  #footer_mobile {
+    display: block;
+  }
+  .tail {
+    display: none;
+  }
+  #footer_button {
+    font-size: 25px !important;
+  }
+  
+  .selection {
+    padding: 40px 0px;
+    width: 80%;
+  }
+  #menu_mobile {
+  margin-right: 0px;
+  
+}
+}
+
+@media only screen and (max-width:790px){
+  .agent{
+    width: 42%;
+  }
+}
+
+@media only screen and (max-width:625px){
+  .agent{
+    width: 41%;
+  }
+}
+
+@media only screen and (max-width:570px){
+  .selection {
+    padding: 40px 0px;
+    width: 100%;
+  }
+  .mo_ta{
+    width: 95%;
+  }
+  a{
+    font-size: 15px;
+  }
+  .agent{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .agent{
+    width: 38%;
+  }
+  /* BRIMSTONE BỊ LỖI NHỎ */
+  .agents>.agent:first-child{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  #sound,
+  #riot {
+    margin-right: 0px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #valo {
+    margin-right: -10px;
+  }
+  .mobile {
+    width: 100%;
+  }
+  .middle{
+    margin-left: 0px;
+  }
+  .agent{
+    width: 44%;
+    margin: 10px;
+  }
+  .selection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 42%;
+    padding: 10px 0px;
+  }
+  .selection >a{
+    margin-bottom:30px ;
+  }
+}
+
+@media only screen and (max-width:407px){
+  #riot{
+    width: 110px;
+  }
+  #valo{
+    width: 60px;
+  }
+ 
+}
