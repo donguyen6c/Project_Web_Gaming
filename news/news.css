@@ -8,15 +8,22 @@
 
 body {
     background-color: lightblue;
+    line-height: 1.7;
 }
 
 /* FLEX */
 .flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
+.flex2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* /////////////// */
 header {
@@ -66,56 +73,73 @@ header>div>ul>li>a:hover {
     padding-bottom: -15px;
     margin-right: 30px;
 }
-
-/* bg of content*/
-
-body {
-    background-image: url(../img\ media/bg0.jpg);
-    height: auto;
-    width: 100%;
-}
-
-div>h1 {
-    margin: 180px 10px 0 50px;
-    font-size: 100px;
-}
-
-div>h2 {
-    margin: 180px 10px 0 50px;
-    font-size: 35px;
-}
-
-div>h3 {
-    font-size: 13px;
-    margin: 10px 630px 0 40px;
-    text-wrap: wrap;
-}
-
-.content {
+/* title */
+body{
     display: block;
 }
-
-/* maps */
-.maps {
+.title > div{
     width: 100%;
-    margin-top: 50px;
+    height: 358px;
+    background-color: #34495e;
+    display: block;
+    margin-bottom:50px ;
 }
-
-.maps .thumb .df {
-    width: 100%;
-    margin-bottom: 30px;
-
+.title> div > h1 {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    color: white;
+    margin:60px 10px 0px 0px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
 }
-
-.maps .thumb .sub {
-    width: 16%;
+/* content */
+/*{
+    display: flex;
+    flex-direction: column;
+}*/
+.content{
+    width: 30%;
+    margin-left: 30px;
     box-sizing: border-box;
+    margin-bottom: 50px;
+    
+}
+.content .img {
+    width: 100%;
+    
+}
+.img img{
+    width: 100% !important;
+    text-align: center;
+}
+.content .sub1{
+    margin-top: 5px;
+    font-size: 21px;
+    width: 80%;
+}
+.content .sub2{
+    font-size: 20px;
+    width: 100%;
+}
+.content .sub3{
+    text-shadow: 0 0 0 rgba(0, 0, 0, -200);
+    font-size: 18px;
+    width: 100%;
+    margin-top: 8px;
+}
+.content img:last-child{
+    height: 235px;
+    width: 418px;
 }
 
 /* FOOTER ////////////////////// */
 
 footer {
     background-color: #1e1e1e;
+   
 }
 
 footer>div>img {
