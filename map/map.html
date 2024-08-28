@@ -3,44 +3,101 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../img/valorant_icon/shortcut.png">
     <link rel="stylesheet" href="map.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="respon6.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />     
-    <title>Valorant MAPS</title>
-    <script src="map.js"></script>
+        rel="stylesheet" />  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+    <title>VALORANT MAPS</title>
+    
 </head>
 <body>
-    <header class="flex">
-        <div>
-            <ul class="middle flex">
-                <a href="https://www.riotgames.com/vi" target="_blank">
-                    <img id="riot" src="../img/valorant_icon/riot_icon.png" alt="riot" /></a>
-                <a href="index.html" target="_blank">
-                    <img id="valo" src="../img/valorant_icon/valorant_icon.png" alt="valo" /></a>
-                <li><a href="#">THÔNG TIN TRÒ CHƠI</a></li>
-                <li><a href="#">TRUYỀN THÔNG</a></li>
-                <li><a href="#">TIN TỨC</a></li>
-                <li><a href="#">BẢNG XẾP HẠNG</a></li>
-                <li><a href="#">HỖ TRỢ</a></li>
-                <li><a href="#">MẠNG XÃ HỘI</a></li>
-                <li><a href="#">THỂ THAO ĐIỆN TỬ</a></li>
-        </div>
-    
-        <div class="tail flex">
-            <a href="#"><img src="../img/icon/kinh_lup.png" alt="timkiem" /></a>
-            <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img style="width: 40px;"
-                    src="../img/icon/fb.png" alt="fb" /></a>
-            <a href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img
-                    src="../img/icon/youtube.png" alt="youtube" /></a>
-            <a href="https://www.instagram.com/valorantvn" target="_blank"><img src="../img/icon/ins.png" alt="ins" /></a>
-        </div>
+   <header class="flex">
+      <div>
+        <button id="sound" class="rechuot" >
+          <img 
+            id="icon"
+            src="../img/valorant_icon/off_sound.png"
+            alt="Play"
+          />
+        </button>
+        <audio id="audio" src="../sound/theme_sound.mp3" loop></audio>
+        
+      </div>
+
+      <div >
+      <ul style="padding-left:0px;" class="middle flex">
+        <a  href="https://www.riotgames.com/vi" target="_blank">
+        <img id="riot" src="../img/valorant_icon/riot_icon_1.png" alt="riot" /></a>
+        <a style="margin-right:35px;" href="index.html" target="_blank">
+        <img  id="valo" src="../img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
+        
+        <li id="menu1"><a href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu">
+          <li><a href="../guide/guide.html" target="_blank">TÌM HIỂU GAME</a></li>
+          <li><a href="../character/character.html" target="_blank">AGENTS</a></li>
+          <li><a href="../map/map.html" target="_blank">MAPS</a></li>
         </ul>
+        
+        </li>
+        <li id="menu2"><a href="#">TIN TỨC</a></li>
+        <li id="menu3"><a href="../media/media.html" target="_blank">TRUYỀN THÔNG</a></li>
+        <li id="menu4"><a href="../hotrokhachhang/help.html" target="_blank">HỖ TRỢ</a></li>
+        <!-- <li><a href="#">MẠNG XÃ HỘI</a></li> -->
+        <li id="menu5"><a href="#">VỀ CHÚNG TÔI</a></li>
+        
+    </div>
+
+        <div class="tail flex">
+          <a class="rechuot" href="#"><img src="../img/icon/kinh_lup.png" alt="timkiem" /></a>
+          <a class="rechuot" href="https://www.facebook.com/VALORANTvn/" target="_blank"
+            ><img style="width: 40px;" src="../img/icon/fb.png" alt="fb"
+          /></a>
+          <a class="rechuot" href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img src="../img/icon/youtube.png"alt="youtube" /></a>
+          <a class="rechuot" href="https://www.instagram.com/valorantvn" target="_blank"><img src="../img/icon/ins.png" alt="ins" /></a>
+        </div>
+     <div id="menu_mobile">
+        <div >
+          <a href="#"><img src="../img/icon/rows.png"></a>
+     </div>
     </header>
+<section>
+<div id="overlay"></div>
+<div class="mobile flex">
+        <a href="index.html" target="_blank">
+        <img style="width: 100px;" id="valo1" src="../img/valorant_icon/valorant_icon_2.png" alt="valo" /></a>
+        
+        <li ><a id="sub" href="#">THÔNG TIN TRÒ CHƠI <i class="fas fa-angle-down"></i></a></li>
+        
+          <li class="submn"><a href="../guide/guide.html" target="_blank">TÌM HIỂU GAME</a></li>
+          <li class="submn"><a href="../character/character.html" target="_blank">AGENTS</a></li>
+          <li class="submn"><a href="../map/map.html" target="_blank">MAPS</a></li>
+    
+        <li ><a href="#">TIN TỨC</a></li>
+        <li ><a href="../media/media.html" target="_blank">TRUYỀN THÔNG</a></li>
+        <li ><a href="../hotrokhachhang/help.html" target="_blank">HỖ TRỢ</a></li>
+        <!-- <li><a href="#">MẠNG XÃ HỘI</a></li> -->
+        <li ><a href="#">VỀ CHÚNG TÔI</a></li>
+
+        <li id="tail_mobile">
+          <a class="rechuot" href="https://www.facebook.com/VALORANTvn/" target="_blank"
+            ><img style="width: 40px;" src="../img/icon/fb.png" alt="fb"
+          /></a>
+          <a class="rechuot" href="https://www.youtube.com/channel/UC1w3rRqx6rBO-xTjETnXLhw" target="_blank"><img src="../img/icon/youtube.png"alt="youtube" /></a>
+
+          <a class="rechuot" href="https://www.instagram.com/valorantvn" target="_blank"><img src="../img/icon/ins.png" alt="ins" /></a>
+        </li>
+
+</div>
+
+</section>
+
+
     <main>
-        <nav class="content">
+        <nav class="maps">
             <section class="p">
                 <div>
                     <h1>
@@ -52,15 +109,17 @@
                         SUNSET
                     </h2>
                     <h3>
-                        A disaster at a local kingdom facility threatens to engulf the whole neighborhood. Stop at your favorite food truck then
-                        fight across the city in this traditional three lane map.
+                        Thảm họa từ một cơ sở của Kingdom tại địa phương có nguy cơ nhấn chìm cả khu phố. Dừng chân tại chiếc xe bán đồ ăn yêu thích để nạp năng lượng và sẵn sàng chiến đấu khắp thành phố với bản đồ 3 đường truyền thống này. 
                     </h3>
                 </div>
             </section>
-        <nav class="maps flex">
+        <nav class="map flex">
             <div class="thumb flex sunset">
-                <img src="../img media/sunset1.webp"
+                <div class="main_img">
+                <img src="../img media/sunset2.webp"
                 class="df" />
+                </div>
+               <div class="select">
                 <img src="../img media/sunset2.webp"
                     class="sub" />
                 <img src="../img media/sunset3.webp"
@@ -73,6 +132,9 @@
                     class="sub" />
                 <img src="../img media/sunset7.webp"
                     class="sub" />
+                <img src="../img media/sunset1.webp"
+                class="sub" />
+                </div>
             </div>
         </nav>
         <nav class="content">
@@ -82,16 +144,18 @@
                         LOTUS
                     </h2>
                     <h3>
-                        A mysterious structure housing an astral conduit radiates with ancient power. Great stone doors provide a variety of
-                        movement opportunities and unlock the paths to three mysterious sites.  
+                         Một công trình bí ẩn với hệ thống dòng chảy thiên thể, tỏa sáng rực rỡ bằng nguồn sức mạnh cổ xưa. Những cánh cổng bằng đá khổng lồ đem tới rất nhiều phương án di chuyển và dẫn lối để vào 3 khu đặt Spike kỳ bí.
                     </h3>
                 </div>
             </section>
         </nav>
-        <nav class="maps flex">
+        <nav class="map flex">
             <div class="thumb flex lotus">
-                <img src="../img media/lotus1.webp"
+                <div class="main_img">
+                <img src="../img media/lotus2.webp"
                     class="df" />
+                </div>
+                <div class="select">
                 <img src="../img media/lotus2.webp"
                     class="sub" />
                 <img src="../img media/lotus3.webp"
@@ -104,6 +168,9 @@
                     class="sub" />
                 <img src="../img media/lotus7.webp"
                     class="sub" />
+                <img src="../img media/lotus1.webp"
+                    class="sub" />
+                </div>
             </div>
         </nav>
         <nav class="content">
@@ -113,16 +180,18 @@
                         ICEBOX
                     </h2>
                     <h3>
-                        Your next battleground is a secret Kingdom excavation site overtaken by the arctic. The two plant sites protected by
-                        snow and metal require some horizontal finesse. Take advantage of the ziplines and they’ll never see you coming.
+                        Sân đấu tiếp theo sẽ là một khu khai quật bí mật của Vương Quốc đã bị bao trùm bởi băng giá. Hai khu vực đặt bom được phủ kín bởi tuyết và kim loại, đòi hỏi người chơi phải chiến đấu thật tinh tế để giành quyền kiểm soát. Hãy tận dụng tốt những dây đu để tạo lợi thế và khiến đối thủ không kịp trở tay.
                     </h3>
                 </div>
             </section>
         </nav>
-        <nav class="maps flex">
+        <nav class="map flex">
             <div class="thumb flex icebox">
-                <img src="../img media/iceb1.webp"
+                <div class="main_img">
+                <img src="../img media/iceb2.webp"
                     class="df" />
+                    </div>
+                <div class="select">
                 <img src="../img media/iceb2.webp"
                     class="sub" />
                 <img src="../img media/iceb3.webp"
@@ -135,7 +204,9 @@
                     class="sub" />
                 <img src="../img media/iceb7.webp"
                     class="sub" />
-                
+                <img src="../img media/iceb1.webp"
+                    class="sub" />
+                </div>
             </div>
         </nav>
         <nav class="content">
@@ -145,16 +216,18 @@
                         FRACTURE
                     </h2>
                     <h3>
-                        A top secret research facility split apart by a failed radianite experiment. With defender options as divided as the
-                        map, the choice is yours: meet the attackers on their own turf or batten down the hatches to weather the assault.
+                        Một khu vực nghiên cứu tối mật đã bị xẻ làm hai bởi một thí nghiệm radianite thất bại. Với những chiến lược phòng thủ đối lập như chính địa hình của bản đồ này, lựa chọn nằm ở chính bạn: đối mặt trực tiếp với những kẻ tấn công trên chính sân chơi của chúng hoặc cầm cự trước cuộc tấn công và giành chiến thắng.
                     </h3>
                 </div>
             </section>
         </nav>
-        <nav class="maps flex">
+        <nav class="map flex">
             <div class="thumb flex frac">
-                <img src="../img media/frac1.webp"
-                    class="df" id="" />
+                <div class="main_img">
+                <img src="../img media/frac2.webp"
+                    class="df" />
+                    </div>
+                <div class="select">
                 <img src="../img media/frac2.webp"
                     class="sub" />
                 <img src="../img media/frac3.webp"
@@ -167,26 +240,50 @@
                     class="sub" />
                 <img src="../img media/frac7.webp"
                     class="sub" />
-                
+                <img src="../img media/frac1.webp"
+                    class="sub" />
+                </div>
             </div>
         </nav>
     <div style="margin-bottom: 50px;"></div>
-    <footer>
-        <div class="logo flex">
-            <img style="width:13%" src="../img/valorant_icon/riot_icon_1.png" alt="riot">
-            <img style="width:8%" src="../img/valorant_icon/vng1.png" alt="vng">
-            <img style="width:10%" src="../img/valorant_icon/valorant_icon_2.png" alt="valo">
-        </div>
-        <div>&copy; năm 2020 - 2024 bởi Riot Games, Inc. RIOT GAMES, VALORANT và mọi logo liên quan là nhãn hiệu, nhân hiệu
-            dịch vụ và/hoặc nhân hiệu đã đăng ký của Riot Games, Inc.</div>
-        <div>Công Ty Cổ Phần VNG. Địa chỉ: Lô 036-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường
-            Tân Thuận Đông, Quận 7, TP.HCM.</div>
-    
-        <div class="flex">
-            <a href="#">CHÍNH SÁCH BẢO MẬT</a>
-            <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
-            <a href="#">TRUNG TÂM TRỢ GIÚP</a>
-        </div>
-    </footer>
+
+
+
+    <div class="on_footer">
+<a id="footer_button" href="#">CHƠI NGAY</a>
+</div>
+
+<section id="footer_mobile">
+  <div class="logo flex">
+  <img style="width:13%" src="../img/valorant_icon/riot_icon_1.png" alt="riot">
+  <img style="width:8%" src="../img/valorant_icon/vng1.png" alt="vng">
+  <img style="width:10%" src="../img/valorant_icon/valorant_icon_2.png" alt="valo">
+  </div>
+  <div>&copy; năm 2020 - 2024 bởi Riot Games, Inc. RIOT GAMES, VALORANT và mọi logo liên quan là nhãn hiệu, nhân hiệu dịch vụ và/hoặc nhân hiệu đã đăng ký của Riot Games, Inc.</div>
+  <div>Công Ty Cổ Phần VNG. Địa chỉ: Lô 036-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</div>
+  
+  <div class="flex">
+  <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+  <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+  <a href="#">TRUNG TÂM TRỢ GIÚP</a>
+  </div>
+</section>
+
+  <footer> 
+  <div class="logo flex">
+  <img style="width:13%" src="../img/valorant_icon/riot_icon_1.png" alt="riot">
+  <img style="width:8%" src="../img/valorant_icon/vng1.png" alt="vng">
+  <img style="width:10%" src="../img/valorant_icon/valorant_icon_2.png" alt="valo">
+  </div>
+  <div>&copy; năm 2020 - 2024 bởi Riot Games, Inc. RIOT GAMES, VALORANT và mọi logo liên quan là nhãn hiệu, nhân hiệu dịch vụ và/hoặc nhân hiệu đã đăng ký của Riot Games, Inc.</div>
+  <div>Công Ty Cổ Phần VNG. Địa chỉ: Lô 036-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</div>
+  
+  <div class="flex">
+  <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+  <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+  <a href="#">TRUNG TÂM TRỢ GIÚP</a>
+  </div>
+</footer>
 </body>
+<script src="map.js"></script>
 </html>
