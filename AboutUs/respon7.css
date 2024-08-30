@@ -1,4 +1,4 @@
-/* RESPONSIVE////////////////////////////////////////////////////// */
+/*RESPONSIVE////////////////////////////////////////////////////// */
 #menu_mobile {
   width: 100px;
   display: none;
@@ -118,11 +118,17 @@
     display: block;
     margin-right: 0px;
   }
+   .game > .logo {
+  width: 100px !important;
+  left:20px
 }
-
-@media only screen and (max-width:1200px){
-    h3{
-        width: 60%;
+}
+@media only screen and (max-width:950px){
+    .content2{
+        height:450px;
+    }
+    .sub2{
+        width: 95%;
     }
 }
 
@@ -145,31 +151,39 @@
   *:not(h1) {
     font-size: medium;
   }
-  h1 {
-    font-size: 24px;
-  }
-
-  h3{
-        width: 90%;
-
-    }
-  h1,h2,h3{
-    margin-left: 20px !important;
-  }
-  .main_img >img{
-    width: 90% !important;
-  }
-  .map .thumb .select .sub{
-    width: 24%;
-  }
-  .map .thumb .select .sub:last-child{
-    width: 15%;
+.game > .logo {
+  width: 75px !important;
+  left:20px
 }
+ .content2{
+        height:500px;
+ }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 635px) {
     #menu_mobile{
         width: 70px;
+    }
+    .entertains, .games{
+        display: flex;
+        flex-direction: column;
+    }
+    .content2{
+        height:auto;
+ }
+    .game{
+        width: 85%;
+    }
+    .title{
+        font-size: 50px;
+        
+    }
+    .sub2{
+        padding-bottom: 40px;
+        margin-bottom: 0px !important;
+    }
+    b{
+        font-size: 18px;
     }
 }
 
@@ -177,7 +191,6 @@
  .sound{
     margin-right: 0px;
  }
- 
 }
 @media only screen and (max-width: 431px) {
   #sound,
@@ -191,8 +204,6 @@
     font-size: 20px;
   }
   #valo {
-    margin-right: -10px;
+    margin-right: -25px;
   }
-  
- 
 }

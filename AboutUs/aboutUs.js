@@ -18,12 +18,7 @@ sound.addEventListener("click", function () {
   playing = !playing; // Đảo ngược trạng thái
 });
 
-const choingay = document.getElementById("footer_button");
-// Gắn sự kiện 'click' cho thẻ <a>
-choingay.addEventListener("click", function (event) {
-  // Hiển thị thông báo khi nhấn vào thẻ <a>
-  alert("GAME SẮP RA MẮT VÀO 30/02/2025!!!!");
-});
+
 
 // MENU RESPONSIVE //////////////////////////////////
 $(document).ready(function () {

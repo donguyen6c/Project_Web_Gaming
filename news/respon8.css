@@ -120,10 +120,10 @@
   }
 }
 
-@media only screen and (max-width:1200px){
-    h3{
-        width: 60%;
-    }
+@media only screen and (max-width: 1200px) {
+  .content {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 810px) {
@@ -141,50 +141,42 @@
     width: 100%;
   }
   /*////////////////////////////////////////////*/
- 
+
   *:not(h1) {
     font-size: medium;
   }
-  h1 {
-    font-size: 24px;
-  }
 
-  h3{
-        width: 90%;
-
-    }
-  h1,h2,h3{
-    margin-left: 20px !important;
+  .content {
+    width: 90%;
   }
-  .main_img >img{
-    width: 90% !important;
+  .content > div.img > img {
+    height: 380px;
   }
-  .map .thumb .select .sub{
-    width: 24%;
-  }
-  .map .thumb .select .sub:last-child{
-    width: 15%;
-}
 }
 
 @media only screen and (max-width: 600px) {
-    #menu_mobile{
-        width: 70px;
-    }
+  #menu_mobile {
+    width: 70px;
+  }
+  .content > div.img > img {
+    height: 340px;
+  }
 }
 
-@media only screen and (max-width:500px){
- .sound{
+@media only screen and (max-width: 500px) {
+  .sound {
     margin-right: 0px;
- }
- 
+  }
+  .content > div.img > img {
+    height: 320px;
+  }
 }
 @media only screen and (max-width: 431px) {
   #sound,
   #riot {
-    margin-right: 0px ;
+    margin-right: 0px;
   }
-  #riot{
+  #riot {
     width: 120px !important;
   }
   h1 {
@@ -193,6 +185,10 @@
   #valo {
     margin-right: -10px;
   }
-  
- 
+  .content > div.img > img {
+    height: 280px;
+  }
+  .on_footer>a{
+    width: 30%;
+  }
 }
