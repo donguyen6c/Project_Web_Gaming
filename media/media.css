@@ -185,26 +185,44 @@ header > div > ul > li > .submenu:hover {
   line-height: 1.5;
 }
 #vien {
-  margin: 15px 0 15px 0;
+  margin: 15px 0;
   border: 2px solid white;
-}
-
-.sub img {
-  width: 100%;
-  transition: transform 0.2s;
 }
 .sub {
   width: 33%;
   padding: 10px;
   box-sizing: border-box;
-  margin: 2px 2px;
+  margin:2px;
+  overflow: hidden !important;
 }
 .subs {
   flex-wrap: wrap;
 }
-.sub > div:hover img {
-  background: #fff;
+.img{
+  width: 100%;
+  position: relative;
 }
+.img > div{
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+  position: relative;
+}
+.img > div > img{
+  width: 100% !important;
+  height: 100% ;
+  object-fit: cover;
+  vertical-align: bottom;
+  transition: transform 0.3s ease;
+}
+.sub .img > div:hover >img {
+  transform: scale(1.1);
+  transform-origin: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 
 /* ON FOOTER//////////////////////////////////////////// */
 .on_footer {
