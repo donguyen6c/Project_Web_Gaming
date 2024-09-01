@@ -43,6 +43,7 @@ header {
   left: 0;
   right: 0; /* Đặt z-index cao để menu nằm trên video */
   z-index: 1000;
+  padding-left: 4px;
 }
 header > div > button {
   margin-right: 15px;
@@ -79,7 +80,7 @@ button img {
 }
 #valo {
   width: 80px;
-  margin-top: -8px;
+  margin-top: 0px;
   filter: brightness(85%); /* khiến cho ảnh không bị sáng quá */
 }
 #valo:hover {
