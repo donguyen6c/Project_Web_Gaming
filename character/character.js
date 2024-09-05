@@ -26,18 +26,18 @@ choingay.addEventListener("click", function (event) {
 ///////////////////////////////////////////////////////////////////////////////////
 //HIEN THI AGENT////////////////////////////////////////////////////////////////////////
 function batHienThi(img) {
-    var modal = document.getElementById("imageModal");
-    var modalImg = document.getElementById("modalImage");
-    modal.style.display = "block";
-    modalImg.src = img.src;
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = img.src;
 }
 function tatHienThi(event) {
-    var modal = document.getElementById("imageModal");
-    var modalImg = document.getElementById("modalImage");
-    // Nếu click bên ngoài thì đóng modal
-    if (event.target !== modalImg) {
-        modal.style.display = "none";
-    }
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  // Nếu click bên ngoài thì đóng modal
+  if (event.target !== modalImg) {
+    modal.style.display = "none";
+  }
 }
 //FILTER AGENTS//////////////////////////////////////////////////////////////////////////////
 // Lọc agents theo role
@@ -58,7 +58,7 @@ function filterAgents(role) {
     });
   }, 300);
 
-// Thay đổi mô tả theo role
+  // Thay đổi mô tả theo role
   const mo_taRole = {
     all: "Đây là toàn bộ agents trong VALORANT. Tùy vào phong cách thi đấu cũng như sở thích của mình, bạn hãy chọn cho bản thân đặc vụ phù hợp  để có thể góp sức mang về chiến thắng cho đội.",
     controller:
@@ -71,31 +71,25 @@ function filterAgents(role) {
       "Sentinels sở hữu bộ kỹ năng giúp bảo vệ site vô cùng mạnh mẽ nhưng cũng mang tới khả năng hỗ trợ tấn công cực ổn đến từ các kỹ năng mang tới hiệu ứng bất lợi cho kẻ địch.",
   };
 
-  document.querySelector(".mo_ta").textContent =
-    mo_taRole[role];
+  document.querySelector(".mo_ta").textContent = mo_taRole[role];
 }
 
 //Gán sự kiện click cho <a> và xử lý click từ <a> đến <div> agent
-document.querySelectorAll('.selection > a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('.selection a.active').classList.remove('active');
-        this.classList.add('active');
+document.querySelectorAll(".selection > a").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".selection a.active").classList.remove("active");
+    this.classList.add("active");
 
-        const role = this.getAttribute('data-role');
-        filterAgents(role);
-    });
+    const role = this.getAttribute("data-role");
+    filterAgents(role);
+  });
 });
 
 // Mặc định là hiển thị tất cả agents trước
-window.onload = function() {
-    filterAgents('all');
+window.onload = function () {
+  filterAgents("all");
 };
-
-
-
-
-
 
 // MENU RESPONSIVE //////////////////////////////////
 $(document).ready(function () {
@@ -116,9 +110,6 @@ $(document).ready(function () {
   });
 });
 
-
-
-
 // ///////////////////////////////////////////////////////
 $(document).ready(function () {
   $("#sub").click(function (event) {
@@ -126,7 +117,7 @@ $(document).ready(function () {
     if ($(".submn").css("display") === "none") {
       $(".submn").css("display", "block"); // Hiển thị phần tử submn
     } else {
-      $(".submn").css("display", "none"); 
+      $(".submn").css("display", "none");
     }
   });
 });
